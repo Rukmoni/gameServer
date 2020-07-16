@@ -6,7 +6,9 @@ function setupDB (dbUri) {
   mongoose.set('useFindAndModify', false)
   mongoose.set('useCreateIndex', true)
   mongoose.set('useUnifiedTopology', true)
-  mongoose.connect("mongodb://localhost:27017/idle-capitalist")
+  // mongoose.connect(dbUri)
+ mongoose.connect('mongodb+srv://rupa:Password01@cluster0-twmln.mongodb.net/capitalist?retryWrites=true&w=majority')
+
 
   const db = mongoose.connection
 
