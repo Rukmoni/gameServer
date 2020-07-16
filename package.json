@@ -1,0 +1,33 @@
+{
+  "name": "game-server",
+  "version": "1.0.0",
+  "description": "Backend ws server for capitalistGame",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "DEBUG=game-server:* node index.js",
+    "start:dev": "standard --fix && DEBUG=idle-capitalist-server:* nodemon index.js"
+  },
+  "keywords": [
+    "Game",
+    "clicker",
+    "game",
+    "adventure-capitalist"
+  ],
+  "author": "Rukmoni",
+  "license": "ISC",
+  "dependencies": {
+    "config": "^3.3.1",
+    "cors": "^2.8.5",
+    "debug": "^4.1.1",
+    "express": "^4.17.1",
+    "express-session": "^1.17.1",
+    "mongoose": "^5.9.23",
+    "uuid": "^8.2.0",
+    "ws": "^7.3.1"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.4",
+    "standard": "^14.3.4"
+  }
+}
